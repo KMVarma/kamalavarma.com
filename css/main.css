@@ -1,8 +1,13 @@
 body {
-    margin: auto;
+    margin: 0;
+}
+
+.container {
     width: 70%;
+    margin: 0 auto;
     text-align: center;
 }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
