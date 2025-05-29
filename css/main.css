@@ -3,7 +3,41 @@ body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 2em;
 }
+.main-heading {
+  text-align: center;
+  font-size: 3em;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+}
+.about-container {
+  display: flex;
+  align-items: center;     /* <-- Vertically center image and text */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;         /* <-- Allows stacking on small screens */
+  margin: 2em 0;
+}
 
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* <-- Vertically center heading and paragraphs */
+}
 
 .container {
     width: 100%;
@@ -18,7 +52,7 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -29,7 +63,10 @@ nav ul li, footer ul li {
   list-style-type: circle;
 }
 
-#publications a:link {color: #0c68c9; font-weight:bold;}
+#publications a:link {color: #0c68c9;}
+
+/*#about a:link {color: #0c68c9; font-weight:bold;}*/
+#about a:link {color: #0c68c9;}
 
 #elsewhere ul{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -67,7 +104,7 @@ h2 {
 
 }
 h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #757575;
 }
