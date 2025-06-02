@@ -68,6 +68,8 @@ nav ul li, footer ul li {
 /*#about a:link {color: #0c68c9; font-weight:bold;}*/
 #about a:link {color: #0c68c9;}
 
+#awards a:link {color: #0c68c9;}
+
 #elsewhere ul{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
