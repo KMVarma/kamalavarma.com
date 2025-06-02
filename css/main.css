@@ -3,12 +3,33 @@ body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 2em;
 }
-.main-heading {
+/*.main-heading {
   text-align: center;
   font-size: 3em;
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   font-weight: lighter;
   margin-bottom: 0.5em;
+}*/
+.main-heading {
+  text-align: center;
+  margin: 1.5em 0 1em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+.name-image {
+  width: 500px;        /* or whatever size you want */
+  height: auto;        /* maintains aspect ratio */
+  display: block;
+  margin: 0 auto;      /* centers the image */
 }
 .about-container {
   display: flex;
@@ -39,20 +60,30 @@ body {
   justify-content: center; /* <-- Vertically center heading and paragraphs */
 }
 
+.about-container.reverse {
+  flex-direction: row-reverse;
+}
+
 .container {
     width: 100%;
    margin: 0 auto;
     text-align: center;
 }
 nav {
+  position: sticky;
+  top: 0;
+  background-color: white; /* or your page’s background */
+  z-index: 1000; /* ensures it stays above other content */
+  padding: 0.5em 0;
   text-align: center;
+  border-bottom: 1px solid #ccc; /* optional: visual separation */
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 0.75em;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -69,6 +100,10 @@ nav ul li, footer ul li {
 #about a:link {color: #0c68c9;}
 
 #awards a:link {color: #0c68c9;}
+
+#misc a:link {color: #0c68c9;}
+
+#patents a:link {color: #0c68c9;}
 
 #elsewhere ul{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
