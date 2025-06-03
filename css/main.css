@@ -94,6 +94,40 @@ nav ul li, footer ul li {
   list-style-type: circle;
 }
 
+summary {
+  cursor: pointer;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+.expand-hint {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-left: 0.5em;
+}
+
+#experience details:first-of-type {
+  margin-top: 1em; /* or 1.5em, adjust as needed */
+}
+
+#experience details {
+  margin-left: 1.5em; /* adjust to match your bullet indent */
+  margin-bottom: 1.2em;
+}
+
+#experience summary {
+  color: #999;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.2em 0;
+}
+
+#experience details p {
+  margin: 0.5em 0 0 1.5em; /* indent paragraph to align under summary */
+}
+
 #publications a:link {color: #0c68c9;}
 
 /*#about a:link {color: #0c68c9; font-weight:bold;}*/
