@@ -3,6 +3,12 @@ body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 2em;
 }
+.centered-section {
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: left;
+  padding: 0 1em;
+}
 /*.main-heading {
   text-align: center;
   font-size: 3em;
