@@ -9,6 +9,10 @@ body {
   text-align: left;
   padding: 0 1em;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
 /*.main-heading {
   text-align: center;
   font-size: 3em;
